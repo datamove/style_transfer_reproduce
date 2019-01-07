@@ -45,8 +45,10 @@ They are mentioned in the arcticle as alpha and beta and define relative weight 
 
 Example:
 
+```
 content_weight = 1  # alpha
 style_weight = 1/8e-2  # beta
+```
 
 ### steps
 
@@ -54,7 +56,7 @@ The number of iterations of target picture.
 
 Example:
 
-steps = 20000
+`steps = 20000`
 
 ### optimizer and its parameters
 
