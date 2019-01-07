@@ -68,7 +68,11 @@ Example:
 
 `optimizer = optim.Adam([target], lr=0.01)`
 
+## How to run
 
+Ray Tune needs to be installed with `pip install ray`. There are no other specific libraries, except those used in Udacity environment (i.e. pytorch, PIL etc).
+
+Clone the repo, run jupyter, navigate to the repo dir, open In_search_of_the_stars.ipynb and run it.
 
 ## Running the experiment
 
@@ -84,7 +88,7 @@ By the deadline, only limited number of trials was conducted. This is due to lar
 
 Unfortunately no image with stars was generated.
 
-Genrated pictures along with there hyperparameters are shown below.
+Generated pictures along with there hyperparameters are shown below.
 
 <img src="experiment_39_trials.png" alt="39 trials" align='middle'/>
 
@@ -93,8 +97,8 @@ Genrated pictures along with there hyperparameters are shown below.
 
 Here are some ideas for the future experiments
 
-* run full expriment with all style_weigh combinations
-* try grid_searh of an optimizer params
+* run full experiment with all style_weights combinations
+* try grid_search of an optimizer params
 * try different optimizers 
 
 
@@ -102,4 +106,4 @@ Here are some ideas for the future experiments
 
 In this notebook, code from [Style Transfer Excersize notebook](https://github.com/udacity/deep-learning-v2-pytorch/blob/master/style-transfer/Style_Transfer_Exercise.ipynb) of [Udacity/deep-learning-v2-pytorch](https://github.com/udacity/deep-learning-v2-pytorch) is heavily borrowed. 
 
-Please see their notebook to get explanation on style transfer method. In my notebook, style transfer metod is not described in comments.
+Please see their notebook to get explanation on style transfer method. In my notebook, style transfer metod is not described in details.
