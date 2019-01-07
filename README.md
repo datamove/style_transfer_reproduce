@@ -31,13 +31,13 @@ They define weights for extracted from VGG19 layers that are used for generating
 
 Example:
 
-'''
+```
 style_weights = {'conv1_1': 0.2,
                  'conv2_1': 0.2,
                  'conv3_1': 0.2,
                  'conv4_1': 0.2,
                  'conv5_1': 0.2}
-'''
+```
 
 ### content_weight, style_weight
 
