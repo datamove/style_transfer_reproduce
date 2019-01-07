@@ -10,13 +10,15 @@ In this notebook, I’ll try to *reproduce* an iconic Von Hogh "Starry Night" st
 </tr>
 </table>
     
+Result of style transfer:
+
 <img src="Van_Gogh_true_target_gatys_paper_021.jpg" alt="Drawing" style="width: 400px;" align='middle'/> 
 
 In this paper, pre-trained VGG19 is used, and there are few hyperparameters to tune, see below. I wanted to obtain the same style transfer as reported in the paper. I have read the article and set the hyperparameters to those values mentioned in the paper. I could get some cool-looking target images, but they were all _without the stars on the sky_! 
 
 <img src="result1.png" alt="Drawing" style="width: 400px;" align="middle"/> 
 
-I made a conclusion that I can not reproduce the article resultm, which is a bid deal for science. I started to wonder why? Some obviouse thoughts were that hyperparameters are wrong. Could be that different source picture contained different pixel values due to different transformations and this really affected the outcome. Some other thoughts were that VGG19's weights are now different from those used by the article authors.
+I made a conclusion that I can not reproduce the article result, which is a big deal for science. I started to wonder why? Some obviouse thoughts were that hyperparameters are wrong. Could be that different source picture contained different pixel values due to different transformations and this really affected the outcome. Some other thoughts were that VGG19's weights are now different from those used by the article authors.
 
 So, I wanted to find a correct set of hyperparameters that will reproduce the article, i.e. I aim to generate the same image they show as their generated target.
 
@@ -29,11 +31,13 @@ They define weights for extracted from VGG19 layers that are used for generating
 
 Example:
 
+'''
 style_weights = {'conv1_1': 0.2,
                  'conv2_1': 0.2,
                  'conv3_1': 0.2,
                  'conv4_1': 0.2,
                  'conv5_1': 0.2}
+'''
 
 ### content_weight, style_weight
 
